@@ -48,9 +48,9 @@ void I2SOutput::stop()
         m_i2sWriterTaskHandle = NULL;
     }
 }
-void I2SOutput:: resume(){
-if(m_i2sWriterTaskHandle == NULL){
-    xTaskCreate(i2sWriterTask, "i2s Writer Task", 4096, this, 1, &m_i2sWriterTaskHandle);
-}
-}
+// void I2SOutput:: resume(){
+// if(m_i2sWriterTaskHandle == NULL){
+//     xTaskCreate(i2sWriterTask, "i2s Writer Task", 4096, this, 1, &m_i2sWriterTaskHandle);
+// }
+// }
 
